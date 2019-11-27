@@ -4,6 +4,10 @@
     display: block;
 }
 
+.dots-container i.active {
+    color: ivory;
+}
+
 /* CSS used in styling HTML page: */
 
 * {
