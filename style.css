@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    background-image: url(https://ih1.redbubble.net/image.449152643.4875/flat,800x800,070,f.u1.jpg);
+}
+
+header {
+    margin: 25px 50px;
+    height: 50px;
+    border: 3px solid crimson;
+    border-radius: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.animated-border {
+    animation-name: border-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.header-item {
+    text-align: center;
+}
+
+.header-item i {
+    font-size: 25px;
+    line-height: 44px;
+    color: crimson;
+    animation-name: icon-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.header-item i:hover {
+    cursor: pointer;
+}
+
+.submenu {
+    width: 66px;
+    border: 3px solid crimson;
+    border-top: transparent;
+    border-radius: 0 0 33px 33px;
+    background-color: rgba(0,0,0,0.85);
+}
+
+/* Writing typo. I'll keep it as it is! -.-" */
+.display-none {
+    visibility: hidden;
+}
+
+.display-block {
+    visibility: visible;
+}
+
+/* Adding little cool effects */
+@keyframes border-color {
+    0% {border-color: ivory}
+    25% {border-color: crimson}
+    50% {border-color: darkorange}
+    75% {border-color: aqua}
+    100% {border-color: ivory}
+}
+
+@keyframes icon-color {
+    0% {color: ivory}
+    25% {color: crimson}
+    50% {color: darkorange}
+    75% {color: aqua}
+    100% {color: ivory}
+}
