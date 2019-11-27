@@ -9,7 +9,46 @@ body {
     background-image: url(https://ih1.redbubble.net/image.449152643.4875/flat,800x800,070,f.u1.jpg);
 }
 
-header {
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.float-left {
+    float: left;
+}
+
+.container {
+    width: 90%;
+    height: 80vh;
+    margin: 10vh auto;
+    border: 1px solid crimson;
+    display: flex;
+    justify-content: center;
+}
+
+.container .img-container {
+    width: 80vh;
+    border-radius: 25px;
+    border: 1px solid pink;
+}
+
+.container .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.container .next-arrow , .container .prev-arrow {
+    /* width: calc(100% / 3); */
+    width: 5vh;
+    height: 100%;
+    border: 1px solid cyan;
+}
+
+/* header {
     margin: 25px 50px;
     height: 50px;
     border: 3px solid crimson;
@@ -51,7 +90,7 @@ header {
 }
 
 /* Writing typo. I'll keep it as it is! -.-" */
-.display-none {
+/* .display-none {
     visibility: hidden;
 }
 
@@ -60,7 +99,7 @@ header {
 }
 
 /* Adding little cool effects */
-@keyframes border-color {
+/* @keyframes border-color {
     0% {border-color: ivory}
     25% {border-color: crimson}
     50% {border-color: darkorange}
@@ -74,4 +113,4 @@ header {
     50% {color: darkorange}
     75% {color: aqua}
     100% {color: ivory}
-}
+} */
