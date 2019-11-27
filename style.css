@@ -20,7 +20,7 @@ body {
 .container {
     width: 90%;
     height: 80vh;
-    margin: 10vh auto;
+    margin: 10vh auto 0;
     display: flex;
     justify-content: center;
 }
@@ -46,11 +46,20 @@ body {
     animation-name: icon-color;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    width: 10vh;
-    font-size: 40px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.dots-container {
+    height: 10vh;
+    animation-name: icon-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .fas:hover {
